@@ -22,8 +22,24 @@
               <li class="nav__item">
                 <a class="nav__link" href="#">Состав</a>
               </li>
-              <li class="nav__item">
+              <li class="nav__item" id="drop-menu">
                 <a class="nav__link" href="#">Оценки</a>
+                <div class="nav__item--drop">
+                  <ul class="nav__drop">
+                    <li class="nav__drop-item">
+                      <a href="#" class="nav__drop-link">Отличники</a>
+                    </li>
+                    <li class="nav__drop-item">
+                      <a href="#" class="nav__drop-link">Хорошисты</a>
+                    </li>
+                    <li class="nav__drop-item">
+                      <a href="#" class="nav__drop-link">Троешники</a>
+                    </li>
+                    <li class="nav__drop-item">
+                      <a href="#" class="nav__drop-link">Двоишники</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#">Отзывы</a>
@@ -63,14 +79,18 @@
                 </li>
               </ul>
             </div>
-            <img
-              class="main__info-img"
-              src="img/gendalf.jpg"
-              alt="Гендальф-сисадмин"
-            />
+            <div class="main__info-div">
+              <img
+                class="main__info-img"
+                src="img/gendalf.jpg"
+                alt="Гендальф-сисадмин"
+              />
+              <div class="main__info-counter main__info-counter--hidden">0</div>
+            </div>
           </div>
         </div>
       </section>
     </main>
   </body>
+  <script src="js/script.js"></script>
 </html>

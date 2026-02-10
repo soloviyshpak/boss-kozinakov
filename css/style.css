@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1540px;
+  margin: 0 auto;
+}
+body {
+  background-image: url(../img/dps_car.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+  background-color: antiquewhite;
+  border-bottom: 1px solid black;
+}
+.header__wrapper {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: 'Comic Sans MS';
+  transition: scale 0.3s;
+}
+.logo:hover {
+  scale: 1.1;
+}
+.logo a {
+  text-decoration: none;
+  font-size: 44px;
+  color: rgb(255, 72, 102);
+}
+.nav {
+}
+.nav__list {
+  display: flex;
+  column-gap: 25px;
+  list-style-type: none;
+}
+.nav__item {
+}
+.nav__link {
+  font-size: 28px;
+  font-family: 'Comic Sans MS';
+  text-decoration: none;
+  color: rgb(51, 1, 200);
+}
+.nav__link:hover {
+  text-decoration: underline;
+}
+
+.main {
+}
+.main-info {
+}
+.main-info__wrapper {
+  background-color: rgb(255, 255, 255, 80%);
+  border: 2px solid black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 15px 10px 30px;
+  margin-top: 30px;
+}
+.main-info__text {
+  font-family: 'Comic Sans MS';
+  font-size: 24px;
+  text-align: justify;
+}
+.main-info__text p {
+  margin-bottom: 30px;
+}
+.main__info-img {
+  width: 500px;
+  margin-left: 20px;
+}

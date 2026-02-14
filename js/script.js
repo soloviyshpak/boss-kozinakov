@@ -17,3 +17,18 @@ gendalf.addEventListener('click', () => {
   count++;
   counter.innerHTML = count;
 });
+
+$('.text_view').click(() => {
+  $('.main-info__text').slideToggle();
+});
+
+$(document).ready(function () {
+  $('.my-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+  });
+});
+Fancybox.bind('[data-fancybox]', {
+  dragToClose: false,
+  // zoomEffect: false,
+});

@@ -4,93 +4,150 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My site</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick-1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick-1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="ui-6.1.10/dist/fancybox/fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__wrapper">
-          <h1 class="logo"><a href="#">201 группа</a></h1>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="#">Главная</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Новости</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Состав</a>
-              </li>
-              <li class="nav__item" id="drop-menu">
-                <a class="nav__link" href="#">Оценки</a>
-                <div class="nav__item--drop">
-                  <ul class="nav__drop">
-                    <li class="nav__drop-item">
-                      <a href="#" class="nav__drop-link">Отличники</a>
-                    </li>
-                    <li class="nav__drop-item">
-                      <a href="#" class="nav__drop-link">Хорошисты</a>
-                    </li>
-                    <li class="nav__drop-item">
-                      <a href="#" class="nav__drop-link">Троешники</a>
-                    </li>
-                    <li class="nav__drop-item">
-                      <a href="#" class="nav__drop-link">Двоишники</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Отзывы</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <main class="main">
-      <section class="main-info">
+    <div class="wrapper">
+      <header class="header">
         <div class="container">
-          <div class="main-info__wrapper">
-            <div class="main-info__text">
-              <p>
-                Смотрите. Скоро вас ждёт момент, когда вы впадёте в ступор на
-                третьем часу настройки BGP или когда Active Directory начнёт
-                мстить за ваши прошлые грехи. И в этот миг вспомните этот текст.
-              </p>
-              <p>
-                Вы — 201-я. Не просто «айтишники». Вы — элита. Избранные. Те,
-                кто добровольно согласился иметь дело не с красивыми кнопочками
-                в интерфейсе, а с суровой правдой командной строки, где опечатка
-                в одном символе может отправить в даун половину условного
-                «ЗаводКотлов».
-              </p>
-              <p>Вы не просто админы. Вы — цифровые шаманы.</p>
-              <ul>
-                <li>Ваш тотем: запасной патч-корд в рюкзаке.</li>
-                <li>
-                  Ваш дух-покровитель: сервер, который не перезагружался 5 лет,
-                  и все его боятся тронуть.
+          <div class="header__wrapper">
+            <h1 class="logo"><a href="#">201 группа</a></h1>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Главная</a>
                 </li>
-                <li>
-                  Ваша магия: фраза «Я посмотрю логи» и священный ритуал «ping
-                  8.8.8.8».
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Новости</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Состав</a>
+                </li>
+                <li class="nav__item" id="drop-menu">
+                  <a class="nav__link" href="#">Оценки</a>
+                  <div class="nav__item--drop">
+                    <ul class="nav__drop">
+                      <li class="nav__drop-item">
+                        <a href="#" class="nav__drop-link">Отличники</a>
+                      </li>
+                      <li class="nav__drop-item">
+                        <a href="#" class="nav__drop-link">Хорошисты</a>
+                      </li>
+                      <li class="nav__drop-item">
+                        <a href="#" class="nav__drop-link">Троешники</a>
+                      </li>
+                      <li class="nav__drop-item">
+                        <a href="#" class="nav__drop-link">Двоишники</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Отзывы</a>
                 </li>
               </ul>
-            </div>
-            <div class="main__info-div">
-              <img
-                class="main__info-img"
-                src="img/gendalf.jpg"
-                alt="Гендальф-сисадмин"
-              />
-              <div class="main__info-counter main__info-counter--hidden">0</div>
-            </div>
+            </nav>
           </div>
         </div>
-      </section>
-    </main>
+      </header>
+      <main class="main">
+        <section class="main-info">
+          <div class="container">
+            <div class="main-info__wrapper">
+              <div class="main-info__text">
+                <p>
+                  Смотрите. Скоро вас ждёт момент, когда вы впадёте в ступор на
+                  третьем часу настройки BGP или когда Active Directory начнёт
+                  мстить за ваши прошлые грехи. И в этот миг вспомните этот
+                  текст.
+                </p>
+                <p>
+                  Вы — 201-я. Не просто «айтишники». Вы — элита. Избранные. Те,
+                  кто добровольно согласился иметь дело не с красивыми
+                  кнопочками в интерфейсе, а с суровой правдой командной строки,
+                  где опечатка в одном символе может отправить в даун половину
+                  условного «ЗаводКотлов».
+                </p>
+                <p>Вы не просто админы. Вы — цифровые шаманы.</p>
+                <ul>
+                  <li>Ваш тотем: запасной патч-корд в рюкзаке.</li>
+                  <li>
+                    Ваш дух-покровитель: сервер, который не перезагружался 5
+                    лет, и все его боятся тронуть.
+                  </li>
+                  <li>
+                    Ваша магия: фраза «Я посмотрю логи» и священный ритуал «ping
+                    8.8.8.8».
+                  </li>
+                </ul>
+              </div>
+              <button class="text_view">Показать/Скрыть</button>
+              <div class="main__info-div">
+                <img
+                  class="main__info-img"
+                  src="img/gendalf.jpg"
+                  alt="Гендальф-сисадмин"
+                />
+                <div class="main__info-counter main__info-counter--hidden">
+                  0
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <seciton class="slider">
+          <h1 class="slider__title">Ими годится колледж!</h1>
+          <div class="my-slider">
+            <div><img src="img/android.jpg" alt="Андраник" /></div>
+            <div><img src="img/mark.jpg" alt="Марк" /></div>
+            <div><img src="img/rusik.jpg" alt="Руслан" /></div>
+            <div><img src="img/saveliy.jpg" alt="Савелий" /></div>
+            <div><img src="img/shis.jpg" alt="Шишкин Лес" /></div>
+            <div><img src="img/vanya.jpg" alt="Ваня" /></div>
+          </div>
+        </seciton>
+        <section class="gallery">
+          <div class="gallery__container">
+            <a href="img/android.jpg" data-fancybox="gallery">
+              <img src="img/android.jpg" />
+            </a>
+            <a href="img/mark.jpg" data-fancybox="gallery">
+              <img src="img/mark.jpg" />
+            </a>
+            <a href="img/rusik.jpg" data-fancybox="gallery">
+              <img src="img/rusik.jpg" />
+            </a>
+            <a href="img/saveliy.jpg" data-fancybox="gallery">
+              <img src="img/saveliy.jpg" />
+            </a>
+            <a href="img/shis.jpg" data-fancybox="gallery">
+              <img src="img/shis.jpg" />
+            </a>
+            <a href="img/vanya.jpg" data-fancybox="gallery">
+              <img src="img/vanya.jpg" />
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script
+    src="slick-1.8.1/slick/slick.min.js"
+    type="text/javascript"
+    charset="utf-8"
+  ></script>
+  <script src="ui-6.1.10/dist/fancybox/fancybox.umd.js"></script>
   <script src="js/script.js"></script>
 </html>
